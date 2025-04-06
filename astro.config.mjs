@@ -11,4 +11,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: "https://nbowisdar.github.io/cactus/",
+  base: "cactus",
 });
