@@ -6,33 +6,31 @@ import Layout from "@/layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<Layout title="Contact">
+<Layout title="Контакти">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
+      <Fragment slot="title">Контакти</Fragment>
+      <Fragment slot="desc">Я тут, щоб допомогти вам.</Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
+        <h2 class="font-medium text-2xl text-gray-800">Зв’яжіться зі мною</h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? We are here to help. Fill up the form or send
-          email or call phone.
+          Маєте запитання чи хочете записатися на консультацію? Заповніть форму або напишіть мені в Telegram чи на email.
         </p>
         <div class="mt-5">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>1734 Sanfransico, CA 93063</span>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:hello@astroshipstarter.com"
-              >hello@astroshipstarter.com</a
-            >
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
-            >
+            <span>м. Київ, Україна</span> {/* Замініть на реальну адресу, якщо потрібно */}
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" />
+            <a href="mailto:mariasohanchak@gmail.com">mariasohanchak@gmail.com</a> {/* Замініть на реальний email */}
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:telegram" />
+            <a href="https://t.me/@Cactyss" target="_blank" rel="noopener">Telegram: @Cactyss</a> {/* Замініть на реальний Telegram */}
           </div>
         </div>
       </div>

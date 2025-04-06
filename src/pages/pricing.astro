@@ -6,70 +6,70 @@ import PricingCard from "@/components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "Індивідуальна консультація",
+    price: "800 грн",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "Тривалість 50 хвилин",
+      "Особиста зустріч або онлайн",
+      "Один учасник",
+      "Конфіденційність гарантована",
+      "Персоналізована підтримка",
+      "Гнучкий графік",
     ],
     button: {
-      text: "Get Started",
-      link: "/",
+      text: "Записатися",
+      link: "/booking", // Замініть на реальний лінк для запису
     },
   },
   {
-    name: "Startup",
+    name: "Пакет підтримки",
     price: {
-      monthly: "$19",
-      annual: "$16",
+      monthly: "2200 грн",
+      annual: "2000 грн",
       discount: "10%",
-      original: "$24",
+      original: "2400 грн",
     },
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "3 консультації по 50 хвилин",
+      "Особисто або онлайн",
+      "Пріоритетний запис",
+      "Додаткові матеріали та вправи",
+      "Знижка 10% при оплаті за місяць",
+      "Індивідуальний план роботи",
     ],
     button: {
-      text: "Get Started",
-      link: "#",
+      text: "Обрати пакет",
+      link: "/booking/package", // Замініть на реальний лінк
     },
   },
   {
-    name: "Enterprise",
-    price: "Custom",
+    name: "Сімейна терапія",
+    price: "1200 грн",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Тривалість 60 хвилин",
+      "Для пар або сімей",
+      "Онлайн або в кабінеті",
+      "Робота з конфліктами",
+      "Індивідуальний підхід до групи",
+      "Підтримка 24/7 по email",
     ],
     button: {
-      text: "Contact us",
-      link: "/contact",
+      text: "Зв’язатися",
+      link: "/contact", // Замініть на реальний лінк для контактів
     },
   },
 ];
 ---
 
-<Layout title="Pricing">
+<Layout title="Вартість послуг">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="title">Вартість послуг</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        Прозорі ціни та гнучкі умови. Обирайте те, що вам підходить.
       </Fragment>
     </Sectionhead>
 

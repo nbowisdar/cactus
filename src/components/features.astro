@@ -4,51 +4,50 @@ import { Icon } from "astro-icon/components";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Індивідуальний підхід",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Кожна консультація адаптується під ваші потреби, щоб допомогти вам знайти рішення для особистих викликів.",
+    icon: "bx:bxs-user-check",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Конфіденційність",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Ваші особисті дані та розмови залишаються повністю приватними, гарантуючи безпечний простір для самовираження.",
+    icon: "bx:bxs-lock-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "Сучасні методи",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Використовую перевірені психологічні техніки та підходи, які допоможуть вам досягти емоційної стабільності.",
+    icon: "bx:bxs-brain",
   },
   {
-    title: "Broad Integration",
+    title: "Гнучкий формат",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Пропоную консультації онлайн або офлайн, щоб ви могли обрати зручний для вас спосіб спілкування.",
+    icon: "bx:bxs-video",
   },
   {
-    title: "SEO Enabled",
+    title: "Підтримка у кризових ситуаціях",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Допомога у подоланні стресу, тривоги чи складних життєвих моментів із чітким планом дій.",
+    icon: "bx:bxs-heart",
   },
   {
-    title: "Community",
+    title: "Розвиток та самопізнання",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Працюємо разом, щоб ви краще зрозуміли себе та розкрили свій потенціал для щасливого життя.",
+    icon: "bx:bxs-star",
   },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+    Усе, що вам потрібно для душевного спокою
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    Моя мета — створити комфортний простір для вашого емоційного здоров’я та особистісного зростання.
   </p>
 </div>
 
@@ -56,7 +55,7 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
