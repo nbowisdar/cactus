@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { Icon } from "astro-icon/components";
 
+const prefix = "/cactus";
+
 const menuitems = [
   // {
   //   title: "Features",
@@ -20,21 +22,21 @@ const menuitems = [
   // },
   {
     title: "Ціни",
-    path: "/pricing",
+    path: `${prefix}/pricing`,
     // children: [],
   },
   {
     title: "Про мене",
-    path: "/about",
+    path: `${prefix}/about`,
   },
   {
     title: "Блог",
-    path: "/blog",
+    path: `${prefix}/blog`,
     badge: true,
   },
   {
     title: "Контакти",
-    path: "/contact",
+    path: `${prefix}/contact`,
   },
 
 ];
@@ -45,7 +47,7 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <Icon class="text-black w-6 h-6 mr-1	" name="bx:bxs-heart"/>
-        <a href="/" class="text-lg"
+        <a href="/cactus" class="text-lg"
           ><span class="font-bold text-slate-800">Cact</span><span
             class="text-slate-500">us</span
           >

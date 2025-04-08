@@ -12,5 +12,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://nbowisdar.github.io/cactus/",
-  base: "cactus",
+  base: "/cactus",
 });
