@@ -28,6 +28,7 @@
     "astro-icon": "^1.1.5",
     "astro-navbar": "^2.3.9",
     "astro-seo": "^0.8.4",
+    "decap-cms-app": "^3.6.2",
     "font-awesome": "^4.7.0",
     "gh-pages": "^6.3.0",
     "sharp": "^0.33.5",
