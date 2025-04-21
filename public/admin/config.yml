@@ -1,9 +1,9 @@
 backend:
   name: github
   branch: main
-  repo: username/cactus
-  site_domain: example.com
-  base_url: http://localhost:4321/
+  repo: nbowisdar/cactus
+  site_domain: https://cactus-opal.vercel.app/
+  base_url: https://cactus-opal.vercel.app/
   auth_endpoint: oauth
 
 media_folder: "src/assets/images"
