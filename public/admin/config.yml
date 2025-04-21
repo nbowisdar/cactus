@@ -1,0 +1,33 @@
+backend:
+  name: github
+  branch: main
+  repo: username/cactus
+  site_domain: example.com
+  base_url: http://localhost:4321/
+  auth_endpoint: oauth
+
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+# media_library:
+#   name: default
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Snippet", name: "snippet", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "object", fields: [
+          { label: "Source", name: "src", widget: "image" },
+          { label: "Alt Text", name: "alt", widget: "string" }
+        ]}
+      - { label: "Publish Date", name: "publishDate", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Astroship" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
