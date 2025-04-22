@@ -6,8 +6,8 @@ backend:
   base_url: https://cactus-opal.vercel.app/
   auth_endpoint: oauth
 
-media_folder: "src/assets/images"
-public_folder: "/assets/images"
+media_folder: "public/images"
+public_folder: "/public/images"
 
 collections:
   - name: "blog"
@@ -26,6 +26,5 @@ collections:
       - { label: "Publish Date", name: "publishDate", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string", default: "Astroship" }
       - { label: "Category", name: "category", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
